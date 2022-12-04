@@ -1,5 +1,4 @@
-f = open("./4/inputs.txt", "r")
-content = f.read().split("\n")
+content = str(open("./4/inputs.txt", "r").read())
 
 score = 0
 
