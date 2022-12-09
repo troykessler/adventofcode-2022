@@ -40,17 +40,14 @@ def get_dir_size(dir_path):
     return s
 
 
+used = get_dir_size("/")
 available = 70000000 - get_dir_size("/")
 free_up = 30000000 - available
 
-current_dir = 0
+current_dir = used
 
 for dirPath in state.keys():
     dirSize = get_dir_size(dirPath)
-
-    if current_dir == 0:
-        current_dir = dirSize
-        continue
 
     if free_up <= dirSize <= current_dir:
         current_dir = dirSize
