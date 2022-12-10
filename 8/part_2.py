@@ -4,11 +4,8 @@ trees = [[int(t) for t in list(row)] for row in content.split("\n")]
 
 
 def calc_view(view):
-    if len(view) == 0:
-        return 0
-
-    for i in range(1, len(view)):
-        if view[i] >= view[0]:
+    for i in range(len(view)):
+        if i != 0 and view[i] >= view[0]:
             return i
 
     return len(view) - 1
