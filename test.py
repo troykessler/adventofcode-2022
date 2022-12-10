@@ -1,5 +1,3 @@
-state = {
-    "/": [123, "/test"],
-    "/test": [234, 34, "/test/lol"],
-    "/test/lol": []
-}
+trees = [1, 2, 3, 4]
+
+print(trees[:2])
