@@ -1,3 +1,3 @@
-trees = [1, 2, 3, 4]
+trees = ["." for _ in range(5)]
 
-print(trees[1:])
+print(trees)
